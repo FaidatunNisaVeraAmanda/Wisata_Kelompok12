@@ -1,5 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_wisata/drawer.dart';
+import 'package:flutter_wisata/utara.dart';
+import 'package:flutter_wisata/barat.dart';
+import 'package:flutter_wisata/selatan.dart';
+import 'package:flutter_wisata/timur.dart';
 
 class HomePage extends StatefulWidget {
   const HomePage({Key? key}) : super(key: key);
@@ -72,17 +76,15 @@ class _HomePageState extends State<HomePage>{
               margin: const EdgeInsets.fromLTRB(0, 8, 0, 8),
               child: InkWell(
                 onTap:() {},
-                child: Column(
-                  children: const <Widget>[
-                    Icon(Icons.garage, size: 100, color: Colors.white,)
-                  ],
-                ),
               ),
             ),
+
             Card(
               margin: const EdgeInsets.all(8),
               child: InkWell(
-                onTap: (){},
+                onTap: (){
+                  Navigator.push(context, MaterialPageRoute(builder: (context) => const Utara()));
+                },
                 splashColor: Colors.green[300],
                 child: Center(
                   child: Column(
@@ -98,7 +100,9 @@ class _HomePageState extends State<HomePage>{
             Card(
               margin: const EdgeInsets.all(8),
               child: InkWell(
-                onTap: (){},
+                onTap: (){
+                  Navigator.push(context, MaterialPageRoute(builder: (context) => const Timur()));
+                },
                 splashColor: Colors.green[300],
                 child: Center(
                   child: Column(
@@ -114,7 +118,9 @@ class _HomePageState extends State<HomePage>{
             Card(
               margin: const EdgeInsets.all(8),
               child: InkWell(
-                onTap: (){},
+                onTap: (){
+                  Navigator.push(context, MaterialPageRoute(builder: (context) => const Barat()));
+                },
                 splashColor: Colors.green[300],
                 child: Center(
                   child: Column(
@@ -130,7 +136,9 @@ class _HomePageState extends State<HomePage>{
             Card(
               margin: const EdgeInsets.all(8),
               child: InkWell(
-                onTap: (){},
+                onTap: (){
+                  Navigator.push(context, MaterialPageRoute(builder: (context) => const Selatan()));
+                },
                 splashColor: Colors.green[300],
                 child: Center(
                   child: Column(
