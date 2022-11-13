@@ -12,8 +12,7 @@ class Timur extends StatelessWidget {
       ),
       body: Container(
         color: Colors.green[600],
-        child: Column(
-          mainAxisAlignment: MainAxisAlignment.center,
+        child: ListView(
           children: const <Widget>[
             Text('wisata di daerah surabaya Timur'),
           ],

@@ -13,6 +13,8 @@ class HomePage extends StatefulWidget {
 }
 
 class _HomePageState extends State<HomePage>{
+
+
   @override
   Widget build(BuildContext context){
     return Scaffold(
@@ -32,7 +34,7 @@ class _HomePageState extends State<HomePage>{
               ListTile(
                 leading: const Icon(Icons.home, color: Colors.white,),
                 title: const Text("Home", style: TextStyle(color: Colors.white),),
-                onTap: () {Navigator.pop(context);},
+                onTap: () { Navigator.push(context, MaterialPageRoute(builder: (context) => HomePage()));},
               ),
               ListTile(
                 leading: const Icon(Icons.person_outline, color: Colors.white,),
@@ -62,95 +64,106 @@ class _HomePageState extends State<HomePage>{
       body: Container(
         color: Colors.green[600],
         child: GridView.count(
-          
           padding: const EdgeInsets.all(25),
           crossAxisCount: 2,
-          children: <Widget>[
+          children: <Widget> [
             Card(
               color: Colors.black,
               margin: const EdgeInsets.fromLTRB(0, 8, 0, 8),
-              child: Text('New Destination', style: TextStyle(fontSize: 17, fontStyle: FontStyle.italic, color: Colors.white),),
+              //child: Text('New Destination', style: TextStyle(fontSize: 17, fontStyle: FontStyle.italic, color: Colors.white),),
             ),
             Card(
               color: Colors.black,
               margin: const EdgeInsets.fromLTRB(0, 8, 0, 8),
-              child: InkWell(
-                onTap:() {},
-              ),
-            ),
-
-            Card(
-              margin: const EdgeInsets.all(8),
-              child: InkWell(
-                onTap: (){
-                  Navigator.push(context, MaterialPageRoute(builder: (context) => const Utara()));
-                },
-                splashColor: Colors.green[300],
-                child: Center(
-                  child: Column(
-                    mainAxisSize: MainAxisSize.min,
-                    children: const <Widget>[
-                      Icon(Icons.widgets_outlined, size: 70, color: Colors.green,),
-                      Text("Surabaya Utara", style: TextStyle(fontSize: 20.0), textAlign: TextAlign.center,),
-                    ],
-                  ),
-                ),
-              ),
             ),
             Card(
-              margin: const EdgeInsets.all(8),
-              child: InkWell(
-                onTap: (){
-                  Navigator.push(context, MaterialPageRoute(builder: (context) => const Timur()));
-                },
-                splashColor: Colors.green[300],
-                child: Center(
-                  child: Column(
-                    mainAxisSize: MainAxisSize.min,
-                    children: const <Widget>[
-                      Icon(Icons.add_home_outlined, size: 70, color: Colors.green,),
-                      Text("Surabaya Timur", style: TextStyle(fontSize: 20.0), textAlign: TextAlign.center,),
-                    ],
-                  ),
-                ),
-              ),
-            ),
-            Card(
-              margin: const EdgeInsets.all(8),
+            elevation: 30,
+            shape: RoundedRectangleBorder(
+              borderRadius: BorderRadius.circular(20)),
               child: InkWell(
                 onTap: (){
                   Navigator.push(context, MaterialPageRoute(builder: (context) => const Barat()));
                 },
-                splashColor: Colors.green[300],
+                splashColor: Colors.green[600],
                 child: Center(
                   child: Column(
                     mainAxisSize: MainAxisSize.min,
-                    children: const <Widget>[
-                      Icon(Icons.yard_rounded, size: 70, color: Colors.green,),
-                      Text("Surabaya Barat", style: TextStyle(fontSize: 20.0), textAlign: TextAlign.center,),
+                    children: <Widget>[
+                      ClipRRect(
+                        borderRadius: BorderRadius.circular(10.0),
+                        child: Image.asset('assets/barat.png')),
                     ],
                   ),
                 ),
-              ),
             ),
-            Card(
-              margin: const EdgeInsets.all(8),
+            margin: const EdgeInsets.only(left: 10.0, right: 10.0, top: 10.0,),
+          ),
+          Card(
+            elevation: 30,
+            shape: RoundedRectangleBorder(
+              borderRadius: BorderRadius.circular(20)),
+              child: InkWell(
+                onTap: (){
+                  Navigator.push(context, MaterialPageRoute(builder: (context) => const Timur()));
+                },
+                splashColor: Colors.green[600],
+                child: Center(
+                  child: Column(
+                    mainAxisSize: MainAxisSize.min,
+                    children: <Widget>[
+                      ClipRRect(
+                        borderRadius: BorderRadius.circular(10.0),
+                        child: Image.asset('assets/timur.png')),
+                    ],
+                  ),
+                ),
+            ),
+            margin: const EdgeInsets.only(left: 10.0, right: 10.0, top: 10.0),
+          ),
+          Card(
+            elevation: 30,
+            shape: RoundedRectangleBorder(
+              borderRadius: BorderRadius.circular(20)),
               child: InkWell(
                 onTap: (){
                   Navigator.push(context, MaterialPageRoute(builder: (context) => const Selatan()));
                 },
-                splashColor: Colors.green[300],
+                splashColor: Colors.green[600],
                 child: Center(
                   child: Column(
                     mainAxisSize: MainAxisSize.min,
-                    children: const <Widget>[
-                      Icon(Icons.woo_commerce, size: 70, color: Colors.green,),
-                      Text("Surabaya Selatan", style: TextStyle(fontSize: 20.0), textAlign: TextAlign.center,),
+                    children: <Widget>[
+                      ClipRRect(
+                        borderRadius: BorderRadius.circular(10.0),
+                        child: Image.asset('assets/selatan.png')),
                     ],
                   ),
                 ),
-              ),
             ),
+            margin: const EdgeInsets.only(left: 10.0, right: 10.0, top: 15.0),
+          ),
+          Card(
+            elevation: 30,
+            shape: RoundedRectangleBorder(
+              borderRadius: BorderRadius.circular(20)),
+              child: InkWell(
+                onTap: (){
+                  Navigator.push(context, MaterialPageRoute(builder: (context) => const Utara()));
+                },
+                splashColor: Colors.green[600],
+                child: Center(
+                  child: Column(
+                    mainAxisSize: MainAxisSize.min,
+                    children: <Widget>[
+                      ClipRRect(
+                        borderRadius: BorderRadius.circular(10.0),
+                        child: Image.asset('assets/utara.png')),
+                    ],
+                  ),
+                ),
+            ),
+            margin: const EdgeInsets.only(left: 10.0, right: 10.0, top: 15.0),
+          ),
           ],
         ),
       ),
