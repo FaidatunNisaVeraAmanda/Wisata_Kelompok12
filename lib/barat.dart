@@ -1,5 +1,4 @@
 import 'dart:ui';
-
 import 'package:flutter/material.dart';
 
 class Barat extends StatelessWidget {
@@ -16,15 +15,43 @@ class Barat extends StatelessWidget {
       body: Container(
         color: Colors.green[600],
         child: GridView.count(
-          crossAxisCount: 2,
+          padding: EdgeInsets.all(8),
+          crossAxisCount: 1,
           children: <Widget> [
             Card(
               margin: EdgeInsets.all(8),
-              elevation: 10,
+              elevation: 2,
               child: InkWell(
                 onTap: (){
                   Navigator.push(context, MaterialPageRoute(builder: (context) => const Barat()));
                 },
+                child: Center(
+                  child: Column(
+                    mainAxisSize: MainAxisSize.min,
+                    children: <Widget>[
+                      ClipRRect(
+                        child: Image.asset('assets/cptwtp.png')),
+                    ],
+                  ),
+                ),
+              ),
+            ),
+            Card(
+              margin: EdgeInsets.all(8),
+              elevation: 2,
+              child: InkWell(
+                onTap: (){
+                  Navigator.push(context, MaterialPageRoute(builder: (context) => const Barat()));
+                },
+                child: Center(
+                  child: Column(
+                    mainAxisSize: MainAxisSize.min,
+                    children: <Widget>[
+                      ClipRRect(
+                        child: Image.asset('assets/dsw.png')),
+                    ],
+                  ),
+                ),
               ),
             ),
           ],

@@ -1,3 +1,4 @@
+import 'dart:ui';
 import 'package:flutter/material.dart';
 
 class Timur extends StatelessWidget {
@@ -10,11 +11,47 @@ class Timur extends StatelessWidget {
         backgroundColor: Colors.black,
         title: const Text('Surabaya Timur'),
       ),
+      
       body: Container(
         color: Colors.green[600],
-        child: ListView(
-          children: const <Widget>[
-            Text('wisata di daerah surabaya Timur'),
+        child: GridView.count(
+          padding: EdgeInsets.all(8),
+          crossAxisCount: 1,
+          children: <Widget> [
+            Card(
+              margin: EdgeInsets.all(8),
+              elevation: 2,
+              child: InkWell(
+                onTap: (){
+                },
+                child: Center(
+                  child: Column(
+                    mainAxisSize: MainAxisSize.min,
+                    children: <Widget>[
+                      ClipRRect(
+                        child: Image.asset('assets/ksa.png')),
+                    ],
+                  ),
+                ),
+              ),
+            ),
+            Card(
+              margin: EdgeInsets.all(8),
+              elevation: 2,
+              child: InkWell(
+                onTap: (){
+                },
+                child: Center(
+                  child: Column(
+                    mainAxisSize: MainAxisSize.min,
+                    children: <Widget>[
+                      ClipRRect(
+                        child: Image.asset('assets/al.png')),
+                    ],
+                  ),
+                ),
+              ),
+            ),
           ],
         ),
       ),
