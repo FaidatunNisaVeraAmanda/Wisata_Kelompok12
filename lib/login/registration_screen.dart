@@ -161,7 +161,7 @@ class _RegistrationScreenState extends State<RegistrationScreen> {
     final signUpButton = Material(
       elevation: 5,
       borderRadius: BorderRadius.circular(30),
-      color: Colors.greenAccent,
+      color: Colors.lime.shade100,
       child: MaterialButton(
           padding: EdgeInsets.fromLTRB(20, 15, 20, 15),
           minWidth: MediaQuery.of(context).size.width,
@@ -172,17 +172,17 @@ class _RegistrationScreenState extends State<RegistrationScreen> {
             "SignUp",
             textAlign: TextAlign.center,
             style: TextStyle(
-                fontSize: 20, color: Colors.white, fontWeight: FontWeight.bold),
+                fontSize: 20, color: Colors.black, fontWeight: FontWeight.bold),
           )),
     );
 
     return Scaffold(
-      backgroundColor: Colors.white,
+      backgroundColor: Colors.green.shade800,
       appBar: AppBar(
-        backgroundColor: Colors.transparent,
+        backgroundColor: Colors.green.shade800,
         elevation: 0,
         leading: IconButton(
-          icon: Icon(Icons.arrow_back, color: Colors.green),
+          icon: Icon(Icons.arrow_back, color: Colors.lime.shade100),
           onPressed: () {
             // passing this to our root
             Navigator.of(context).pop();
@@ -192,7 +192,7 @@ class _RegistrationScreenState extends State<RegistrationScreen> {
       body: Center(
         child: SingleChildScrollView(
           child: Container(
-            color: Colors.white,
+            color: Colors.green.shade800,
             child: Padding(
               padding: const EdgeInsets.all(36.0),
               child: Form(
