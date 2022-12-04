@@ -11,26 +11,29 @@ class Selatan extends StatelessWidget {
         backgroundColor: Colors.black,
         title: const Text('Surabaya Selatan'),
       ),
-      
       body: Container(
         color: Colors.green[600],
         child: GridView.count(
           padding: EdgeInsets.all(12.0),
           crossAxisCount: 1,
-          children: <Widget> [
+          children: <Widget>[
             new Card(
               child: new Column(
                 children: <Widget>[
                   new Hero(
-                    tag: {},
-                  child: new Material(
-                    child: new InkWell(
-                      onTap: () => Navigator.of(context).push(new MaterialPageRoute(
-                        builder: (BuildContext context) => new DetailKBS(),
-                    )),
-                      child: new Image.asset('assets/kbs.png', fit: BoxFit.contain,),
-                    ),
-                  ))
+                      tag: {},
+                      child: new Material(
+                        child: new InkWell(
+                          onTap: () =>
+                              Navigator.of(context).push(new MaterialPageRoute(
+                            builder: (BuildContext context) => new DetailKBS(),
+                          )),
+                          child: new Image.asset(
+                            'assets/kbs.png',
+                            fit: BoxFit.contain,
+                          ),
+                        ),
+                      ))
                 ],
               ),
             ),
@@ -38,15 +41,18 @@ class Selatan extends StatelessWidget {
               child: new Column(
                 children: <Widget>[
                   new Hero(
-                    tag: {},
-                  child: new Material(
-                    child: new InkWell(
-                      onTap: () => Navigator.of(context).push(new MaterialPageRoute(
-                        builder: (BuildContext context) => new DetailHM(),
-                    )),
-                      child: new Image.asset('assets/hm.png',),
-                    ),
-                  ))
+                      tag: {},
+                      child: new Material(
+                        child: new InkWell(
+                          onTap: () =>
+                              Navigator.of(context).push(new MaterialPageRoute(
+                            builder: (BuildContext context) => new DetailHM(),
+                          )),
+                          child: new Image.asset(
+                            'assets/hm.png',
+                          ),
+                        ),
+                      ))
                 ],
               ),
             ),
@@ -58,14 +64,16 @@ class Selatan extends StatelessWidget {
 }
 
 class DetailKBS extends StatelessWidget {
-
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       body: new ListView(
         children: <Widget>[
           new Container(
-            child: new Image.asset('assets/kbs.png', fit: BoxFit.cover,),
+            child: new Image.asset(
+              'assets/kbs.png',
+              fit: BoxFit.cover,
+            ),
           ),
           new Container(
             padding: new EdgeInsets.all(8.0),
@@ -84,14 +92,16 @@ class DetailKBS extends StatelessWidget {
 }
 
 class DetailHM extends StatelessWidget {
-
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       body: new ListView(
         children: <Widget>[
           new Container(
-            child: new Image.asset('assets/hm.png', fit: BoxFit.cover,),
+            child: new Image.asset(
+              'assets/hm.png',
+              fit: BoxFit.cover,
+            ),
           ),
           new Container(
             padding: new EdgeInsets.all(8.0),
