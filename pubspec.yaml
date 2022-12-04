@@ -94,19 +94,9 @@ flutter:
   # list giving the asset and other descriptors for the font. For
   # example:
   fonts:
-    - family: Cocogoose
-      fonts:
-        - asset: font/Cocogoose.ttf
     - family: Cream
       fonts:
         - asset: font/Cream.ttf
-    - family: RTP
-      fonts:
-        - asset: font/Stanberry.ttf
-    - family: Coco
-      fonts:
-        - asset: font/CocoGothic_trial.ttf.
-        - asset: font/CocoGothic-Bold_trial.ttf
   #       - asset: fonts/Schyler-Italic.ttf
   #        style: italic
   #  - family: Trajan Pro
