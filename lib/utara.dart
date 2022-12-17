@@ -469,7 +469,7 @@ class DetailSNQ extends StatelessWidget {
             child: new Card(
               color: Colors.lime.shade100,
               child: new Text(
-                "Pantai Kenjeran dikenal juga sebagai Pantai Ria Kenjeran yang merupakan destinasi wisata keluarga di Surabaya. Wisata alam ini menawarkan panorama pantai dan berbagai wahana permainan yang menyenangkan.",
+                "Surabaya North Quay adalah sebuah kawasan wisata baru yang berlokasi di lantai dua dan tiga gedung megah Terminal Gapura Surya Nusantara, lokasi ini akan segera dibuka.Di destinasi wisata baru tersebut, pengunjung tidak hanya dapat menikmati pemandangan indah, namun juga mewah dengan sandarnya kapal pesiar internasional. Surabaya North Quay berada di terminal penumpang kapal laut modern, Gapura Surya Nusantara, Pelabuhan Tanjung Perak.",
                 style: new TextStyle(fontSize: 18.0, fontFamily: "Cream"),
                 textAlign: TextAlign.justify,
               ),
@@ -581,7 +581,7 @@ class DetailKJS extends StatelessWidget {
             child: new Card(
               color: Colors.lime.shade100,
               child: new Text(
-                "Pantai Kenjeran dikenal juga sebagai Pantai Ria Kenjeran yang merupakan destinasi wisata keluarga di Surabaya. Wisata alam ini menawarkan panorama pantai dan berbagai wahana permainan yang menyenangkan.",
+                "Kembang Jepun Surabaya adalah kawasan sepanjang 750 m dan lebar 20 m. Kawasan ini merupakan kawasan kota lama yang padat dan sibuk dengan orang-orang yang berlalu lalang dengan kegiatan perdagangannya. Kawasan ini merupakan kawasan tersibuk di Surabaya, dimana menjadi pusat perdagangan di siang hari dan tetap ramai di malam hari karena banyak penjual makanan yang bisa dipilih.",
                 style: new TextStyle(fontSize: 18.0, fontFamily: "Cream"),
                 textAlign: TextAlign.justify,
               ),
