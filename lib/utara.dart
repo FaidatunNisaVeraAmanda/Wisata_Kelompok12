@@ -50,6 +50,54 @@ class Utara extends StatelessWidget {
                 ],
               ),
             ),
+            new Card(
+              child: new Column(
+                children: <Widget>[
+                  new Hero(
+                    tag: {},
+                  child: new Material(
+                    child: new InkWell(
+                      onTap: () => Navigator.of(context).push(new MaterialPageRoute(
+                        builder: (BuildContext context) => new DetailWRSA(),
+                    )),
+                      child: new Image.asset('assets/wrsa.png', fit: BoxFit.contain,),
+                    ),
+                  ))
+                ],
+              ),
+            ),
+            new Card(
+              child: new Column(
+                children: <Widget>[
+                  new Hero(
+                    tag: {},
+                  child: new Material(
+                    child: new InkWell(
+                      onTap: () => Navigator.of(context).push(new MaterialPageRoute(
+                        builder: (BuildContext context) => new DetailSNQ(),
+                    )),
+                      child: new Image.asset('assets/snq.png', fit: BoxFit.contain,),
+                    ),
+                  ))
+                ],
+              ),
+            ),
+            new Card(
+              child: new Column(
+                children: <Widget>[
+                  new Hero(
+                    tag: {},
+                  child: new Material(
+                    child: new InkWell(
+                      onTap: () => Navigator.of(context).push(new MaterialPageRoute(
+                        builder: (BuildContext context) => new DetailKJS(),
+                    )),
+                      child: new Image.asset('assets/kjs.png', fit: BoxFit.contain,),
+                    ),
+                  ))
+                ],
+              ),
+            ),
           ],
         ),
       ),
@@ -133,7 +181,7 @@ class DetailPK extends StatelessWidget {
             child: new Card(
               color: Colors.lime.shade100,
               child: new Text(
-                "Senin - Minggu",
+                "Setiap Hari",
                 style: new TextStyle(fontSize: 18.0, fontFamily: "Cream"),
                 textAlign: TextAlign.center,
               ),
@@ -245,7 +293,7 @@ class DetailMS extends StatelessWidget {
             child: new Card(
               color: Colors.lime.shade100,
               child: new Text(
-                "Senin - Minggu",
+                "Setiap Hari",
                 style: new TextStyle(fontSize: 18.0, fontFamily: "Cream"),
                 textAlign: TextAlign.center,
               ),
@@ -281,3 +329,338 @@ class DetailMS extends StatelessWidget {
   }
 }
 
+class DetailWRSA extends StatelessWidget {
+
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      body: new ListView(
+        children: <Widget>[
+          new Container(
+            child: new Image.asset('assets/wrsa.png', fit: BoxFit.cover,),
+          ),
+          new Container(
+            color: Colors.lime.shade100,
+            padding: new EdgeInsets.fromLTRB(8, 4, 8, 0),
+            child: new Card(
+              color: Colors.green.shade800,
+              child: new Text(
+                "- DESKRIPSI -",
+                style: new TextStyle(fontSize: 22.0, fontWeight: FontWeight.bold, color: Colors.white, fontFamily: "Cream"),
+                textAlign: TextAlign.center,
+              ),
+            ),
+          ),
+          new Container(
+            color: Colors.lime.shade100,
+            padding: new EdgeInsets.fromLTRB(8, 4, 8, 0),
+            child: new Card(
+              color: Colors.lime.shade100,
+              child: new Text(
+                "Salah satu tokoh yang dikenal umat Muslim di Tanah Jawa adalah Walisongo. Salah satu Walisongo yang dimakamkan di Surabaya adalah Sunan Ampel. Makam Sunan Ampel ini adalah saksi bisu perjuangan Islam di wilayah Jawa Timur. Mengunjungi Makam Sunan Ampel memang bukan hanya sekedar wisata religi. Disini Anda bisa menikmati arsitektur masjid yang dibangun dengan gaya arsitektur perpaduan antara Jawa Kuno dan juga Arab.",
+                style: new TextStyle(fontSize: 18.0, fontFamily: "Cream"),
+                textAlign: TextAlign.justify,
+              ),
+            ),
+          ),
+          new Container(
+            color: Colors.lime.shade100,
+            padding: new EdgeInsets.fromLTRB(8, 4, 8, 0),
+            child: new Card(
+              color: Colors.green.shade800,
+              child: new Text(
+                "- JAM OPERASIONAL -",
+                style: new TextStyle(fontSize: 22.0, fontWeight: FontWeight.bold, color: Colors.white, fontFamily: "Cream"),
+                textAlign: TextAlign.center,
+              ),
+            ),
+          ),
+          new Container(
+            color: Colors.lime.shade100,
+            padding: new EdgeInsets.fromLTRB(8, 4, 8, 0),
+            child: new Card(
+              color: Colors.lime.shade100,
+              child: new Text(
+                "24 Jam",
+                style: new TextStyle(fontSize: 18.0, fontFamily: "Cream"),
+                textAlign: TextAlign.center,
+              ),
+            ),
+          ),
+          new Container(
+            color: Colors.lime.shade100,
+            padding: new EdgeInsets.fromLTRB(8, 4, 8, 0),
+            child: new Card(
+              color: Colors.green.shade800,
+              child: new Text(
+                "- HARI -",
+                style: new TextStyle(fontSize: 22.0, fontWeight: FontWeight.bold, color: Colors.white, fontFamily: "Cream"),
+                textAlign: TextAlign.center,
+              ),
+            ),
+          ),
+          new Container(
+            color: Colors.lime.shade100,
+            padding: new EdgeInsets.fromLTRB(8, 4, 8, 0),
+            child: new Card(
+              color: Colors.lime.shade100,
+              child: new Text(
+                "Setiap Hari",
+                style: new TextStyle(fontSize: 18.0, fontFamily: "Cream"),
+                textAlign: TextAlign.center,
+              ),
+            ),
+          ),
+          new Container(
+            color: Colors.lime.shade100,
+            padding: new EdgeInsets.fromLTRB(8, 4, 8, 0),
+            child: new Card(
+              color: Colors.green.shade800,
+              child: new Text(
+                "- ALAMAT -",
+                style: new TextStyle(fontSize: 22.0, fontWeight: FontWeight.bold, color: Colors.white, fontFamily: "Cream"),
+                textAlign: TextAlign.center,
+              ),
+            ),
+          ),
+          new Container(
+            color: Colors.lime.shade100,
+            padding: new EdgeInsets.fromLTRB(8, 4, 8, 4),
+            child: new Card(
+              color: Colors.lime.shade100,
+              child: new Text(
+                "Jl. Nyamplungan, Ampel, Kec. Semampir, Kota SBY, Jawa Timur 60151",
+                style: new TextStyle(fontSize: 18.0, fontFamily: "Cream"),
+                textAlign: TextAlign.justify,
+              ),
+            ),
+          )
+        ],
+      ),
+    );
+  }
+}
+
+class DetailSNQ extends StatelessWidget {
+
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      body: new ListView(
+        children: <Widget>[
+          new Container(
+            child: new Image.asset('assets/snq.png', fit: BoxFit.cover,),
+          ),
+          new Container(
+            color: Colors.lime.shade100,
+            padding: new EdgeInsets.fromLTRB(8, 4, 8, 0),
+            child: new Card(
+              color: Colors.green.shade800,
+              child: new Text(
+                "- DESKRIPSI -",
+                style: new TextStyle(fontSize: 22.0, fontWeight: FontWeight.bold, color: Colors.white, fontFamily: "Cream"),
+                textAlign: TextAlign.center,
+              ),
+            ),
+          ),
+          new Container(
+            color: Colors.lime.shade100,
+            padding: new EdgeInsets.fromLTRB(8, 4, 8, 0),
+            child: new Card(
+              color: Colors.lime.shade100,
+              child: new Text(
+                "Pantai Kenjeran dikenal juga sebagai Pantai Ria Kenjeran yang merupakan destinasi wisata keluarga di Surabaya. Wisata alam ini menawarkan panorama pantai dan berbagai wahana permainan yang menyenangkan.",
+                style: new TextStyle(fontSize: 18.0, fontFamily: "Cream"),
+                textAlign: TextAlign.justify,
+              ),
+            ),
+          ),
+          new Container(
+            color: Colors.lime.shade100,
+            padding: new EdgeInsets.fromLTRB(8, 4, 8, 0),
+            child: new Card(
+              color: Colors.green.shade800,
+              child: new Text(
+                "- JAM OPERASIONAL -",
+                style: new TextStyle(fontSize: 22.0, fontWeight: FontWeight.bold, color: Colors.white, fontFamily: "Cream"),
+                textAlign: TextAlign.center,
+              ),
+            ),
+          ),
+          new Container(
+            color: Colors.lime.shade100,
+            padding: new EdgeInsets.fromLTRB(8, 4, 8, 0),
+            child: new Card(
+              color: Colors.lime.shade100,
+              child: new Text(
+                "13.00 WIB - 19.00 WIB",
+                style: new TextStyle(fontSize: 18.0, fontFamily: "Cream"),
+                textAlign: TextAlign.center,
+              ),
+            ),
+          ),
+          new Container(
+            color: Colors.lime.shade100,
+            padding: new EdgeInsets.fromLTRB(8, 4, 8, 0),
+            child: new Card(
+              color: Colors.green.shade800,
+              child: new Text(
+                "- HARI -",
+                style: new TextStyle(fontSize: 22.0, fontWeight: FontWeight.bold, color: Colors.white, fontFamily: "Cream"),
+                textAlign: TextAlign.center,
+              ),
+            ),
+          ),
+          new Container(
+            color: Colors.lime.shade100,
+            padding: new EdgeInsets.fromLTRB(8, 4, 8, 0),
+            child: new Card(
+              color: Colors.lime.shade100,
+              child: new Text(
+                "Selasa - Minggu",
+                style: new TextStyle(fontSize: 18.0, fontFamily: "Cream"),
+                textAlign: TextAlign.center,
+              ),
+            ),
+          ),
+          new Container(
+            color: Colors.lime.shade100,
+            padding: new EdgeInsets.fromLTRB(8, 4, 8, 0),
+            child: new Card(
+              color: Colors.green.shade800,
+              child: new Text(
+                "- ALAMAT -",
+                style: new TextStyle(fontSize: 22.0, fontWeight: FontWeight.bold, color: Colors.white, fontFamily: "Cream"),
+                textAlign: TextAlign.center,
+              ),
+            ),
+          ),
+          new Container(
+            color: Colors.lime.shade100,
+            padding: new EdgeInsets.fromLTRB(8, 4, 8, 4),
+            child: new Card(
+              color: Colors.lime.shade100,
+              child: new Text(
+                "Perak Utara, Pabean Cantian, Surabaya, Jawa Timur, Indonesia, 60165",
+                style: new TextStyle(fontSize: 18.0, fontFamily: "Cream"),
+                textAlign: TextAlign.justify,
+              ),
+            ),
+          )
+        ],
+      ),
+    );
+  }
+}
+
+class DetailKJS extends StatelessWidget {
+
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      body: new ListView(
+        children: <Widget>[
+          new Container(
+            child: new Image.asset('assets/kjs.png', fit: BoxFit.cover,),
+          ),
+          new Container(
+            color: Colors.lime.shade100,
+            padding: new EdgeInsets.fromLTRB(8, 4, 8, 0),
+            child: new Card(
+              color: Colors.green.shade800,
+              child: new Text(
+                "- DESKRIPSI -",
+                style: new TextStyle(fontSize: 22.0, fontWeight: FontWeight.bold, color: Colors.white, fontFamily: "Cream"),
+                textAlign: TextAlign.center,
+              ),
+            ),
+          ),
+          new Container(
+            color: Colors.lime.shade100,
+            padding: new EdgeInsets.fromLTRB(8, 4, 8, 0),
+            child: new Card(
+              color: Colors.lime.shade100,
+              child: new Text(
+                "Pantai Kenjeran dikenal juga sebagai Pantai Ria Kenjeran yang merupakan destinasi wisata keluarga di Surabaya. Wisata alam ini menawarkan panorama pantai dan berbagai wahana permainan yang menyenangkan.",
+                style: new TextStyle(fontSize: 18.0, fontFamily: "Cream"),
+                textAlign: TextAlign.justify,
+              ),
+            ),
+          ),
+          new Container(
+            color: Colors.lime.shade100,
+            padding: new EdgeInsets.fromLTRB(8, 4, 8, 0),
+            child: new Card(
+              color: Colors.green.shade800,
+              child: new Text(
+                "- JAM OPERASIONAL -",
+                style: new TextStyle(fontSize: 22.0, fontWeight: FontWeight.bold, color: Colors.white, fontFamily: "Cream"),
+                textAlign: TextAlign.center,
+              ),
+            ),
+          ),
+          new Container(
+            color: Colors.lime.shade100,
+            padding: new EdgeInsets.fromLTRB(8, 4, 8, 0),
+            child: new Card(
+              color: Colors.lime.shade100,
+              child: new Text(
+                "18.00 WIB - 00.00 WIB",
+                style: new TextStyle(fontSize: 18.0, fontFamily: "Cream"),
+                textAlign: TextAlign.center,
+              ),
+            ),
+          ),
+          new Container(
+            color: Colors.lime.shade100,
+            padding: new EdgeInsets.fromLTRB(8, 4, 8, 0),
+            child: new Card(
+              color: Colors.green.shade800,
+              child: new Text(
+                "- HARI -",
+                style: new TextStyle(fontSize: 22.0, fontWeight: FontWeight.bold, color: Colors.white, fontFamily: "Cream"),
+                textAlign: TextAlign.center,
+              ),
+            ),
+          ),
+          new Container(
+            color: Colors.lime.shade100,
+            padding: new EdgeInsets.fromLTRB(8, 4, 8, 0),
+            child: new Card(
+              color: Colors.lime.shade100,
+              child: new Text(
+                "Setiap Hari",
+                style: new TextStyle(fontSize: 18.0, fontFamily: "Cream"),
+                textAlign: TextAlign.center,
+              ),
+            ),
+          ),
+          new Container(
+            color: Colors.lime.shade100,
+            padding: new EdgeInsets.fromLTRB(8, 4, 8, 0),
+            child: new Card(
+              color: Colors.green.shade800,
+              child: new Text(
+                "- ALAMAT -",
+                style: new TextStyle(fontSize: 22.0, fontWeight: FontWeight.bold, color: Colors.white, fontFamily: "Cream"),
+                textAlign: TextAlign.center,
+              ),
+            ),
+          ),
+          new Container(
+            color: Colors.lime.shade100,
+            padding: new EdgeInsets.fromLTRB(8, 4, 8, 4),
+            child: new Card(
+              color: Colors.lime.shade100,
+              child: new Text(
+                "Jl. Kembang Jepun, Surabaya (SBY), Jawa Timur",
+                style: new TextStyle(fontSize: 18.0, fontFamily: "Cream"),
+                textAlign: TextAlign.justify,
+              ),
+            ),
+          )
+        ],
+      ),
+    );
+  }
+}

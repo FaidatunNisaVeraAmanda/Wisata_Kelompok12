@@ -1,7 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_wisata/login/login_screen.dart';
 import 'package:flutter_wisata/splashscreen.dart';
-import 'package:flutter_wisata/login/login_screen.dart';
 
 void main() {
   runApp(const MyApp());

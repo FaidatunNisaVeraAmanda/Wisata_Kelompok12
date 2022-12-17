@@ -50,6 +50,54 @@ class Barat extends StatelessWidget {
                 ],
               ),
             ),
+            new Card(
+              child: new Column(
+                children: <Widget>[
+                  new Hero(
+                    tag: {},
+                  child: new Material(
+                    child: new InkWell(
+                      onTap: () => Navigator.of(context).push(new MaterialPageRoute(
+                        builder: (BuildContext context) => new DetailWBK(),
+                    )),
+                      child: new Image.asset('assets/wbk.png', fit: BoxFit.contain,),
+                    ),
+                  ))
+                ],
+              ),
+            ),
+            new Card(
+              child: new Column(
+                children: <Widget>[
+                  new Hero(
+                    tag: {},
+                  child: new Material(
+                    child: new InkWell(
+                      onTap: () => Navigator.of(context).push(new MaterialPageRoute(
+                        builder: (BuildContext context) => new DetailWBMS(),
+                    )),
+                      child: new Image.asset('assets/wbms.png', fit: BoxFit.contain,),
+                    ),
+                  ))
+                ],
+              ),
+            ),
+            new Card(
+              child: new Column(
+                children: <Widget>[
+                  new Hero(
+                    tag: {},
+                  child: new Material(
+                    child: new InkWell(
+                      onTap: () => Navigator.of(context).push(new MaterialPageRoute(
+                        builder: (BuildContext context) => new DetailJK(),
+                    )),
+                      child: new Image.asset('assets/jk.png', fit: BoxFit.contain,),
+                    ),
+                  ))
+                ],
+              ),
+            ),
           ],
         ),
       ),
@@ -245,7 +293,7 @@ class DetailDSW extends StatelessWidget {
             child: new Card(
               color: Colors.lime.shade100,
               child: new Text(
-                "Senin - Minggu",
+                "Setiap Hari",
                 style: new TextStyle(fontSize: 18.0, fontFamily: "Cream"),
                 textAlign: TextAlign.center,
               ),
@@ -281,3 +329,338 @@ class DetailDSW extends StatelessWidget {
   }
 }
 
+class DetailWBK extends StatelessWidget {
+
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      body: new ListView(
+        children: <Widget>[
+          new Container(
+            child: new Image.asset('assets/wbk.png', fit: BoxFit.cover,),
+          ),
+          new Container(
+            color: Colors.lime.shade100,
+            padding: new EdgeInsets.fromLTRB(8, 4, 8, 0),
+            child: new Card(
+              color: Colors.green.shade800,
+              child: new Text(
+                "- DESKRIPSI -",
+                style: new TextStyle(fontSize: 22.0, fontWeight: FontWeight.bold, color: Colors.white, fontFamily: "Cream"),
+                textAlign: TextAlign.center,
+              ),
+            ),
+          ),
+          new Container(
+            color: Colors.lime.shade100,
+            padding: new EdgeInsets.fromLTRB(8, 4, 8, 0),
+            child: new Card(
+              color: Colors.lime.shade100,
+              child: new Text(
+                "Wisata Batas Kampung merupakan wisata yang menawarkan kesejukan alam, keasrian lingkungan di sudut kota Surabaya yang identik dengan panas dan macet. Dalam area WBK, selain adanya lahan wisata edukasi petik buah sayuran juga terdapat beberapa kolam ikan seperti Gurami, Nila, Patin dan Mujair. Di area tersebut juga terdapat sejumlah Joglo para pengunjung, area bermain anak-anak, stan kuliner dan di akhir pekan ada penampilan hiburan musik.",
+                style: new TextStyle(fontSize: 18.0, fontFamily: "Cream"),
+                textAlign: TextAlign.justify,
+              ),
+            ),
+          ),
+          new Container(
+            color: Colors.lime.shade100,
+            padding: new EdgeInsets.fromLTRB(8, 4, 8, 0),
+            child: new Card(
+              color: Colors.green.shade800,
+              child: new Text(
+                "- JAM OPERASIONAL -",
+                style: new TextStyle(fontSize: 22.0, fontWeight: FontWeight.bold, color: Colors.white, fontFamily: "Cream"),
+                textAlign: TextAlign.center,
+              ),
+            ),
+          ),
+          new Container(
+            color: Colors.lime.shade100,
+            padding: new EdgeInsets.fromLTRB(8, 4, 8, 0),
+            child: new Card(
+              color: Colors.lime.shade100,
+              child: new Text(
+                "09.00 WIB – 21.00 WIB",
+                style: new TextStyle(fontSize: 18.0, fontFamily: "Cream"),
+                textAlign: TextAlign.center,
+              ),
+            ),
+          ),
+          new Container(
+            color: Colors.lime.shade100,
+            padding: new EdgeInsets.fromLTRB(8, 4, 8, 0),
+            child: new Card(
+              color: Colors.green.shade800,
+              child: new Text(
+                "- HARI -",
+                style: new TextStyle(fontSize: 22.0, fontWeight: FontWeight.bold, color: Colors.white, fontFamily: "Cream"),
+                textAlign: TextAlign.center,
+              ),
+            ),
+          ),
+          new Container(
+            color: Colors.lime.shade100,
+            padding: new EdgeInsets.fromLTRB(8, 4, 8, 0),
+            child: new Card(
+              color: Colors.lime.shade100,
+              child: new Text(
+                "Setiap Hari",
+                style: new TextStyle(fontSize: 18.0, fontFamily: "Cream"),
+                textAlign: TextAlign.center,
+              ),
+            ),
+          ),
+          new Container(
+            color: Colors.lime.shade100,
+            padding: new EdgeInsets.fromLTRB(8, 4, 8, 0),
+            child: new Card(
+              color: Colors.green.shade800,
+              child: new Text(
+                "- ALAMAT -",
+                style: new TextStyle(fontSize: 22.0, fontWeight: FontWeight.bold, color: Colors.white, fontFamily: "Cream"),
+                textAlign: TextAlign.center,
+              ),
+            ),
+          ),
+          new Container(
+            color: Colors.lime.shade100,
+            padding: new EdgeInsets.fromLTRB(8, 4, 8, 4),
+            child: new Card(
+              color: Colors.lime.shade100,
+              child: new Text(
+                "Jl. Sumberan HKSN 1, RT 002 / RW 004, Balas Klumprik, Kec. Wiyung, Kota SBY, Jawa Timur 60222",
+                style: new TextStyle(fontSize: 18.0, fontFamily: "Cream"),
+                textAlign: TextAlign.justify,
+              ),
+            ),
+          )
+        ],
+      ),
+    );
+  }
+}
+
+class DetailWBMS extends StatelessWidget {
+
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      body: new ListView(
+        children: <Widget>[
+          new Container(
+            child: new Image.asset('assets/wbms.png', fit: BoxFit.cover,),
+          ),
+          new Container(
+            color: Colors.lime.shade100,
+            padding: new EdgeInsets.fromLTRB(8, 4, 8, 0),
+            child: new Card(
+              color: Colors.green.shade800,
+              child: new Text(
+                "- DESKRIPSI -",
+                style: new TextStyle(fontSize: 22.0, fontWeight: FontWeight.bold, color: Colors.white, fontFamily: "Cream"),
+                textAlign: TextAlign.center,
+              ),
+            ),
+          ),
+          new Container(
+            color: Colors.lime.shade100,
+            padding: new EdgeInsets.fromLTRB(8, 4, 8, 0),
+            child: new Card(
+              color: Colors.lime.shade100,
+              child: new Text(
+                "Wisata air Sumur Welut memanfaatkan waduk seluas sekitar 3.5 ha dan kedalaman 4meter yang terletak di Jl. Raya Bangkingan sebagai lokasi wisata alam. Selain itu, sebelah utara waduk Sumur Welut terdapat cagar budaya berupa punden dengan sebutan Punden Pesapen. Untuk menikmati pesona wisata ini tidak dikenakan biaya.",
+                style: new TextStyle(fontSize: 18.0, fontFamily: "Cream"),
+                textAlign: TextAlign.justify,
+              ),
+            ),
+          ),
+          new Container(
+            color: Colors.lime.shade100,
+            padding: new EdgeInsets.fromLTRB(8, 4, 8, 0),
+            child: new Card(
+              color: Colors.green.shade800,
+              child: new Text(
+                "- JAM OPERASIONAL -",
+                style: new TextStyle(fontSize: 22.0, fontWeight: FontWeight.bold, color: Colors.white, fontFamily: "Cream"),
+                textAlign: TextAlign.center,
+              ),
+            ),
+          ),
+          new Container(
+            color: Colors.lime.shade100,
+            padding: new EdgeInsets.fromLTRB(8, 4, 8, 0),
+            child: new Card(
+              color: Colors.lime.shade100,
+              child: new Text(
+                "08.00 WIB - 16.00 WIB",
+                style: new TextStyle(fontSize: 18.0, fontFamily: "Cream"),
+                textAlign: TextAlign.center,
+              ),
+            ),
+          ),
+          new Container(
+            color: Colors.lime.shade100,
+            padding: new EdgeInsets.fromLTRB(8, 4, 8, 0),
+            child: new Card(
+              color: Colors.green.shade800,
+              child: new Text(
+                "- HARI -",
+                style: new TextStyle(fontSize: 22.0, fontWeight: FontWeight.bold, color: Colors.white, fontFamily: "Cream"),
+                textAlign: TextAlign.center,
+              ),
+            ),
+          ),
+          new Container(
+            color: Colors.lime.shade100,
+            padding: new EdgeInsets.fromLTRB(8, 4, 8, 0),
+            child: new Card(
+              color: Colors.lime.shade100,
+              child: new Text(
+                "Setiap Hari",
+                style: new TextStyle(fontSize: 18.0, fontFamily: "Cream"),
+                textAlign: TextAlign.center,
+              ),
+            ),
+          ),
+          new Container(
+            color: Colors.lime.shade100,
+            padding: new EdgeInsets.fromLTRB(8, 4, 8, 0),
+            child: new Card(
+              color: Colors.green.shade800,
+              child: new Text(
+                "- ALAMAT -",
+                style: new TextStyle(fontSize: 22.0, fontWeight: FontWeight.bold, color: Colors.white, fontFamily: "Cream"),
+                textAlign: TextAlign.center,
+              ),
+            ),
+          ),
+          new Container(
+            color: Colors.lime.shade100,
+            padding: new EdgeInsets.fromLTRB(8, 4, 8, 4),
+            child: new Card(
+              color: Colors.lime.shade100,
+              child: new Text(
+                "Bangkingan, Lakarsantri, Surabaya City, East Java",
+                style: new TextStyle(fontSize: 18.0, fontFamily: "Cream"),
+                textAlign: TextAlign.justify,
+              ),
+            ),
+          )
+        ],
+      ),
+    );
+  }
+}
+
+class DetailJK extends StatelessWidget {
+
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      body: new ListView(
+        children: <Widget>[
+          new Container(
+            child: new Image.asset('assets/jk.png', fit: BoxFit.cover,),
+          ),
+          new Container(
+            color: Colors.lime.shade100,
+            padding: new EdgeInsets.fromLTRB(8, 4, 8, 0),
+            child: new Card(
+              color: Colors.green.shade800,
+              child: new Text(
+                "- DESKRIPSI -",
+                style: new TextStyle(fontSize: 22.0, fontWeight: FontWeight.bold, color: Colors.white, fontFamily: "Cream"),
+                textAlign: TextAlign.center,
+              ),
+            ),
+          ),
+          new Container(
+            color: Colors.lime.shade100,
+            padding: new EdgeInsets.fromLTRB(8, 4, 8, 0),
+            child: new Card(
+              color: Colors.lime.shade100,
+              child: new Text(
+                "Wisata air Sumur Welut memanfaatkan waduk seluas sekitar 3.5 ha dan kedalaman 4meter yang terletak di Jl. Raya Bangkingan sebagai lokasi wisata alam. Selain itu, sebelah utara waduk Sumur Welut terdapat cagar budaya berupa punden dengan sebutan Punden Pesapen. Untuk menikmati pesona wisata ini tidak dikenakan biaya.",
+                style: new TextStyle(fontSize: 18.0, fontFamily: "Cream"),
+                textAlign: TextAlign.justify,
+              ),
+            ),
+          ),
+          new Container(
+            color: Colors.lime.shade100,
+            padding: new EdgeInsets.fromLTRB(8, 4, 8, 0),
+            child: new Card(
+              color: Colors.green.shade800,
+              child: new Text(
+                "- JAM OPERASIONAL -",
+                style: new TextStyle(fontSize: 22.0, fontWeight: FontWeight.bold, color: Colors.white, fontFamily: "Cream"),
+                textAlign: TextAlign.center,
+              ),
+            ),
+          ),
+          new Container(
+            color: Colors.lime.shade100,
+            padding: new EdgeInsets.fromLTRB(8, 4, 8, 0),
+            child: new Card(
+              color: Colors.lime.shade100,
+              child: new Text(
+                "08.00 WIB - 16.00 WIB",
+                style: new TextStyle(fontSize: 18.0, fontFamily: "Cream"),
+                textAlign: TextAlign.center,
+              ),
+            ),
+          ),
+          new Container(
+            color: Colors.lime.shade100,
+            padding: new EdgeInsets.fromLTRB(8, 4, 8, 0),
+            child: new Card(
+              color: Colors.green.shade800,
+              child: new Text(
+                "- HARI -",
+                style: new TextStyle(fontSize: 22.0, fontWeight: FontWeight.bold, color: Colors.white, fontFamily: "Cream"),
+                textAlign: TextAlign.center,
+              ),
+            ),
+          ),
+          new Container(
+            color: Colors.lime.shade100,
+            padding: new EdgeInsets.fromLTRB(8, 4, 8, 0),
+            child: new Card(
+              color: Colors.lime.shade100,
+              child: new Text(
+                "Setiap Hari",
+                style: new TextStyle(fontSize: 18.0, fontFamily: "Cream"),
+                textAlign: TextAlign.center,
+              ),
+            ),
+          ),
+          new Container(
+            color: Colors.lime.shade100,
+            padding: new EdgeInsets.fromLTRB(8, 4, 8, 0),
+            child: new Card(
+              color: Colors.green.shade800,
+              child: new Text(
+                "- ALAMAT -",
+                style: new TextStyle(fontSize: 22.0, fontWeight: FontWeight.bold, color: Colors.white, fontFamily: "Cream"),
+                textAlign: TextAlign.center,
+              ),
+            ),
+          ),
+          new Container(
+            color: Colors.lime.shade100,
+            padding: new EdgeInsets.fromLTRB(8, 4, 8, 4),
+            child: new Card(
+              color: Colors.lime.shade100,
+              child: new Text(
+                "Bangkingan, Lakarsantri, Surabaya City, East Java",
+                style: new TextStyle(fontSize: 18.0, fontFamily: "Cream"),
+                textAlign: TextAlign.justify,
+              ),
+            ),
+          )
+        ],
+      ),
+    );
+  }
+}
