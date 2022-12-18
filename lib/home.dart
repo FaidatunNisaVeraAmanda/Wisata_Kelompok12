@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_wisata/drawer.dart';
 import 'package:flutter_wisata/utara.dart';
 import 'package:flutter_wisata/barat.dart';
 import 'package:flutter_wisata/selatan.dart';
